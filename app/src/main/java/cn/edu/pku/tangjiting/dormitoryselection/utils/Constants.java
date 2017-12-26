@@ -18,7 +18,7 @@ public class Constants {
     public static final HashMap<String, String> errorCodeMap = new HashMap<String, String>(){
         {
             put("40001","学号不存在");
-            put("40002","密码错误");
+            put("40002","学号或密码错误");
             put("40009","参数错误");
         }
     };

@@ -98,7 +98,7 @@ public class DealDormActivity extends BaseActivity {
                     task.isAvail();
                     task.execute((Void) null);
                 }else{
-                    Toast.makeText(DealDormActivity.this,"同住人信息缺失！",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DealDormActivity.this,"请输入同住人信息！",Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -122,9 +122,12 @@ public class DealDormActivity extends BaseActivity {
 
 
     private void addLayout(int num) {
+        int i = 0;
+        int j =num;
         while (num > 0) {
             tv_people_together.setVisibility(View.VISIBLE);
             ll_add_student.setVisibility(View.VISIBLE);
+            i = j - num + 1;
 
             LinearLayout linearLayout_stu_id = new LinearLayout(DealDormActivity.this);
             linearLayout_stu_id.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -144,7 +147,7 @@ public class DealDormActivity extends BaseActivity {
 
             EditText content = new EditText(DealDormActivity.this);
             content.setTextSize(16);
-            content.setHint("输入同住人学号！");
+            content.setHint("请输入同住人"+i+"学号");
             content.clearFocus();
             content.setBackgroundColor(Color.TRANSPARENT);
             LinearLayout.LayoutParams layoutParams_content = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -161,8 +164,9 @@ public class DealDormActivity extends BaseActivity {
             linearLayout_stu_code.setPadding(pix, pix, pix, pix);
 
             TextView code_title = new TextView(DealDormActivity.this);
-            code_title.setText("验证码");
+            code_title.setText("校验码");
             code_title.setTextSize(17);
+            code_title.setTextColor(Color.BLACK);
             LinearLayout.LayoutParams layoutParams_code_title = new LinearLayout.LayoutParams(Utils.dip2px(DealDormActivity.this, 100), ViewGroup.LayoutParams.WRAP_CONTENT);
             code_title.setPadding(0, 0, Utils.dip2px(DealDormActivity.this, 10), 0);
             Typeface font2 = Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD);
@@ -171,7 +175,7 @@ public class DealDormActivity extends BaseActivity {
 
             EditText code_content = new EditText(DealDormActivity.this);
             code_content.setTextSize(16);
-            code_content.setHint("输入同住人验证码！");
+            code_content.setHint("请输入同住人"+i+"校验码");
             code_content.clearFocus();
             code_content.setBackgroundColor(Color.TRANSPARENT);
             LinearLayout.LayoutParams layoutParams_code_content = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);

@@ -11,7 +11,7 @@ public class SuccessActivity extends BaseActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_success);
-        setTitleContent("办理宿舍成功");
+        setTitleContent("办理成功");
         findViewById(R.id.bt_go_home).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

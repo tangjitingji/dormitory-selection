@@ -2,7 +2,7 @@
     <string name="app_name">软微选宿舍</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">用户名</string>
+    <string name="prompt_email">学号</string>
     <string name="prompt_password">密码</string>
     <string name="action_sign_in">登录</string>
     <string name="check_network">请检查网络连接！</string>
@@ -11,6 +11,6 @@
     <string name="login_fail_info">用户名或密码错误！</string>
     <string name="startDeal">开始办理</string>
     <string name="ok">确定</string>
-    <string name="introduction">开放时间:\n男生:2017/8/30 15:00:00 --  2017/9/1 15:00:00\n女生:2017/8/28 15:00:00 --  2017/9/1 15:00:00\n说明:\n1.办理多人入住时需要提供验证码，\n请勿透露给非同住人！\n2.本系统仅供大兴校区新生使用！\n</string>
+    <string name="introduction">开放时间:\n女生:2017/8/30 14:00:00 --  2017/9/10 12:00:00\n男生:2017/8/30 15:00:00 --  2017/9/10 12:00:00\n说明:\n1.办理多人入住时需要提供验证码，\n请勿透露给非同住人！\n2.本系统仅供大兴校区新生使用！\n</string>
     <string name="cancle">取消</string>
 </resources>

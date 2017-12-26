@@ -360,7 +360,7 @@
             android:layout_height="wrap_content"
             android:text="@string/ok"
             android:textStyle="bold"
-            android:background="@android:color/holo_blue_dark"
+            android:background="@android:color/holo_red_dark"
             android:textSize="20dp"
             android:textColor="@android:color/white"/>
     </LinearLayout>

@@ -42,9 +42,9 @@
         style="?android:textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="返回首页"
+        android:text="查看入住信息"
         android:textStyle="bold"
-        android:background="@android:color/holo_blue_dark"
+        android:background="@android:color/holo_red_dark"
         android:textSize="20dp"
         android:textColor="@android:color/white"/>
 </RelativeLayout>

@@ -22,9 +22,9 @@ public class HomeActivity extends BaseActivity{
         ((TextView) findViewById(R.id.tv_home_name)).setText(user.getName());
         ((TextView) findViewById(R.id.tv_home_num)).setText(user.getStudentid());
         ((TextView) findViewById(R.id.tv_home_sex)).setText(user.getGender());
-        ((TextView) findViewById(R.id.tv_stat)).setText("办理成功");
+        ((TextView) findViewById(R.id.tv_stat)).setText("已完成办理");
         ((TextView) findViewById(R.id.tv_building_num)).setText(user.getName());
-        ((TextView) findViewById(R.id.tv_dorm_num)).setText("5214");
+        ((TextView) findViewById(R.id.tv_dorm_num)).setText("5209");
 
     }
 }
