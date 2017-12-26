@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/iv_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welcome"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/big"
+        android:layout_below="@+id/iv_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎你，新同学"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/small"
+        android:layout_below="@+id/big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="报道当天请凭通知书到对应宿舍楼前办理入住"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_content"/>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/small"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/bt_go_home"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回首页"
+        android:textStyle="bold"
+        android:background="@android:color/holo_blue_dark"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
